@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto !important;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+}
+
+:root {
+    --primary-color: #ff2000;
+    --color-brown: #ffe4c49d;
+    --color-dark: #000000;
+    --border-radius: 38px;
+    --font-bill: 12px;
+    --color-line: #000;
+    --border-size: .5px;
+}
+
+@font-face {
+    font-family: Noto;
+    src: url("../Fonts/NotoSansLao_SemiCondensed-Regular.ttf");
+}
+
+
+/* ================================================================== */
+
+.color-red {
+    color: var(--primary-color);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* .main-header{
+   border-bottom: 3px solid var(--primary-color); 
+} */
+
+.icon {
+    margin-right: 5px !important;
+}
+
+.form-control:focus {
+    outline: 0 !important;
+    border-color: initial;
+    box-shadow: none;
+}
+
+.white {
+    background-color: #fff !important;
+}
+
+div {
+    text-align: start;
+}
+
+
+/* ================================================================== */
+
+.container-login {
+    /* width: 100vw; */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .box-login {
+    max-width: 30rem;
+    width: 100%;
+    box-shadow: 0 0 5px 4px #4444;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.container-login .box-login .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-login .box-login .logo img {
+    width: 7rem;
+    height: 7rem;
+    padding: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+}
+
+.container-login .box-login .form-login {
+    width: 100%;
+    padding: 8px 8px;
+    border: 1px solid #6d6d6d44;
+    border-radius: var(--border-radius);
+    padding-left: 1.1rem;
+}
+
+.container-login .box-login .form-login:focus {
+    width: 100%;
+    padding: 8px 8px;
+    border: 3px solid #ffcbcb;
+    outline: none;
+    background-color: #fff;
+    padding-left: 1.1rem;
+}
+
+.container-login .box-login .btn-login {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+}
+
+.container-login .box-login .checkbox {
+    display: flex;
+    align-items: center;
+    padding-left: .8rem;
+}
+
+.container-login .box-login .checkbox .form-checkbox {
+    margin-right: 5px;
+}
+
+
+/* ============================   Nav bar =============================== */
+
+.nav {
+    width: 100%;
+    height: 55px;
+    border-bottom: 3px solid #ec2203;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.check-role {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff !important;
+    position: fixed;
+}
+
+
+/* ======================================================== */
+
+.contents {
+    padding: 0 .7rem !important;
+    padding-top: 4.5rem !important;
+    /* background-color: #f4f4f4; */
+}
+
+.d-inline {
+    width: 100%;
+}
+
+.borders {
+    border: 1px solid #4444;
+    border-radius: 0px !important;
+}
+
+.btnn:active {
+    color: lime;
+}
+
+
+/* ============ loading ==================== */
+
+.loading {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.btnc {
+    text-decoration: none;
+}
+
+.space {
+    height: 3rem;
+}
+
+.drawerHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    height: 70px;
+    align-items: center;
+}
+
+.cloudexpress {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ff2000;
+}
+
+.btn-float {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #ff2000;
+    box-shadow: 0 0 10px 0px #5a5555ab;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+}
+
+.btn-float:hover {
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------- */
+
+.container-print {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.bill-print {
+    width: 70mm;
+    height: 96mm;
+    border: 1px solid red;
+}
+
+.branch-name {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.9rem;
+}
+
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.subtext {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #a4a4a4
+}
+
+.line-break {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+/* ================ ======================== */
+
+@media print {
+    /* .container-print {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    } */
+
+    html,
+    body {
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+    .box-bill {
+        display: block !important;
+    }
+
+    #header,
+    #nav,
+    .d-print {
+        display: none !important;
+    }
+
+    @page {
+        margin-top: 0.1in;
+        margin-bottom: 0.1in;
+        margin-left: 0.1in;
+        margin-right: 0.1in;
+    }
+
+    .contents {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* ------------ print bill in page list parcel -------------  */
+    .css-15sgtm3 {
+        border: none !important;
+        max-width: 70mm !important;
+        max-height: 100mm !important;
+        overflow: hidden;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .print-none {
+        display: none !important;
+    }
+}
+
+.box-bill {
+    width: 70mm;
+    height: 100mm;
+    border: 1px solid #000;
+    display: none;
+}
+
+.box-billl {
+    padding: .3rem;
+    margin: 0 auto;
+    width: 70mm;
+    height: 100mm;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.customer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: var(--font-bill);
+}
+
+.customer .receive {
+    border-left: var(--border-size) solid var(--color-line);
+    padding-left: 5px;
+}
+
+.to_branch {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: var(--border-size) solid var(--color-line);
+    border-bottom: var(--border-size) solid var(--color-line);
+    font-size: var(--font-bill);
+}
+
+.to_branch .icon-truck {
+    position: absolute;
+}
+
+.cod {
+    font-size: var(--font-bill);
+    border-bottom: var(--border-size) solid var(--color-line);
+}
+
+.sum {
+    font-size: var(--font-bill);
+    border-top: var(--border-size) solid var(--color-line);
+    border-bottom: var(--border-size) solid var(--color-line);
+}
+
+.info_branch {
+    font-size: 11px;
+    border-top: var(--border-size) solid var(--color-line);
+}
+
+.comment {
+    font-size: var(--font-bill);
+}
+
+.c_comment {
+    font-weight: bold !important;
+    text-decoration: underline;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: var(--font-bill);
+    padding-top: 3px;
+}
+
+.detail .parcel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-right: var(--border-size) solid var(--color-line);
+}
+
+.detail .parcel .date {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+.detail .qr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr .box-qr {
+    width: 4rem;
+    height: 4rem;
+}
+
+.qr-size {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.send-box-bill {
+    min-height: 100mm;
+    min-width: 70mm;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.flag {
+    max-width: 20px;
+    width: 100%;
+    margin: 0 .5rem;
+}
+
+/* .send-box-bill-show {
+    min-height: 100mm;
+    min-width: 70mm;
+    height: 100%;
+    border: 1px solid #000;
+} */
+.btn-modal {
+    min-width: 200px;
+    text-align: center;
+}
+
+.branchCode {
+    color: #adadad;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.react-date-picker__wrapper {
+    border: none !important;
+}
+
+.fa-whatsapp {
+    color: #07c82a;
+    font-size: 1.5rem;
+}
+
+.chat {
+    text-decoration: none;
+}
+
+.link-chat {
+    border: none;
+    color: var(--primary-color);
+}
+
+.dividends {
+    margin-top: 2rem;
+    display: flex;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 7px 0 var(--primary-color);
+}
+
+.dividends .box-center {
+    padding: 0 1.4rem;
+}
+
+.box-right {
+    color: var(--primary-color);
+}
+
+.form-control:focus {
+    border: 2.5px solid #ff22005d;
+}
+
+.cod-th {
+    border-bottom: 1px solid #fff !important;
+    text-align: center;
+
+}
+
+#cancelparcel:hover {
+    color: #ff2000;
+}
+
+
+/* --------------------- start component country ---------------------*/
+
+.country-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-container span {
+    color: #ff2000;
+}
+
+.country-container .load .loading {
+    box-sizing: border-box;
+    background-color: transparent;
+    min-width: 50px;
+    min-height: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+    position: relative;
+}
+
+.country-container .load .loading::before {
+    border-top: 2px solid #ff2000;
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    background-color: #fff;
+    min-width: 50px;
+    min-height: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: onload .4s linear infinite;
+}
+
+@keyframes onload {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------- end component country ---------------------*/
